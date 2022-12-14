@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:twitter_clone/screens/home_body.dart';
-import 'package:twitter_clone/screens/loginScreen.dart';
 import 'package:twitter_clone/screens/profile.dart';
+import 'package:twitter_clone/screens/welcomeScreen.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -158,12 +158,15 @@ class HomePage extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                           leading: IconButton(
-                            icon: Icon(Icons.logout_outlined),
+                            icon: Icon(
+                              Icons.logout_outlined,
+                              color: Colors.white,
+                            ),
                             onPressed: () {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => LoginScreen()));
+                                      builder: (context) => WelcomeScreen()));
                             },
                           ),
                         ),
