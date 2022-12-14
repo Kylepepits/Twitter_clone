@@ -45,6 +45,7 @@ flutter:
    - assets/images/face5.jpeg
    - assets/images/image1.jpeg
    - assets/images/image2.jpeg
+   - assets/images/logo.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.

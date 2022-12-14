@@ -23,7 +23,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                     width: MediaQuery.of(context).size.width,
                   ),
                   Image.asset(
-                    'assets/logo.png',
+                    'assets/images/logo.jpeg',
                     height: 200,
                     width: 200,
                   ),
