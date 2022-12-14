@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:twitter_clone/screens/home.dart';
 
 class ProfilePage extends StatelessWidget {
   final profileimages = [
@@ -367,7 +368,10 @@ class ProfilePage extends StatelessWidget {
           children: <Widget>[
             IconButton(
               icon: Icon(Icons.home),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HomePage()));
+              },
             ),
             IconButton(
               icon: Icon(Icons.search),
