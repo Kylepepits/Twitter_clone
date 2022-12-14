@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:twitter_clone/screens/home_body.dart';
+import 'package:twitter_clone/screens/loginScreen.dart';
 import 'package:twitter_clone/screens/profile.dart';
 
 class HomePage extends StatelessWidget {
@@ -149,6 +150,21 @@ class HomePage extends StatelessWidget {
                           title: Text(
                             'Help center',
                             style: TextStyle(color: Colors.white),
+                          ),
+                        ),
+                        ListTile(
+                          title: Text(
+                            'Log out',
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          leading: IconButton(
+                            icon: Icon(Icons.logout_outlined),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => LoginScreen()));
+                            },
                           ),
                         ),
                       ],
